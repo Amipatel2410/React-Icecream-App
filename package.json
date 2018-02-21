@@ -1,0 +1,18 @@
+{
+  "name": "amisha",
+  "version": "1.0.0",
+  "description": "iceream app",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debugger": "DEBUG=*:* nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "pg-promise": "^7.5.4"
+  }
+}
