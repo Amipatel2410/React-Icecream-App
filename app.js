@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
   res.send('hello world');
 });
 
-/*const icecreamRoutes = require('./routes/icecream-routes');
-app.use('/icecream', icecreamRoutes); */
+const icecreamRoutes = require('./routes/icecream-routes');
+app.use('/icecream', icecreamRoutes);
 
 app.use('*', (req, res) => {
   res.status(400).json({
