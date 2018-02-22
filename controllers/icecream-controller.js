@@ -59,7 +59,7 @@ icecreamController.update = (req, res) => {
       url: req.body.url,
       brand: req.body.brand,
     },
-    req.params.id,
+    req.params.id
   )
     .then(icecream => {
       res.json({

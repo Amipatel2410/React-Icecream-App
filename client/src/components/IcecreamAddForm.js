@@ -78,7 +78,7 @@ class IceCreamAddForm extends Component {
               type="number"
               placeholder="Rating"
               name="rating"
-              value={this.state.description}
+              value={this.state.rating}
               onChange={this.handleInputChange}
             />
           </label>
@@ -105,7 +105,7 @@ class IceCreamAddForm extends Component {
           <input type="submit" value="Submit!" />
         </form>
         {this.state.fireRedirect
-          ? <Redirect push to={`/ice-cream/${this.state.newId}`} />
+          ? <Redirect push to={`/icecream/${this.state.newId}`} />
           : ''}
       </div>
     );

@@ -120,7 +120,7 @@ class IceCreamEditForm extends Component {
           <input type="submit" value="Submit!" />
         </form>
         {this.state.fireRedirect
-          ? <Redirect push to={`/ice-cream/${this.state.newId}`} />
+          ? <Redirect push to={`/icecream/${this.state.newId}`} />
           : ''}
       </div>
     );

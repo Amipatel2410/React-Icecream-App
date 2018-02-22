@@ -5,10 +5,10 @@ import { Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import IceCreamList from './components/IceCreamList';
-import IceCreamSingle from './components/IceCreamSingle';
-import IceCreamAddForm from './components/IceCreamAddForm';
-import IceCreamEditForm from './components/IceCreamEditForm';
+import IcecreamList from './components/IcecreamList';
+import IcecreamSingle from './components/IcecreamSingle';
+import IcecreamAddForm from './components/IcecreamAddForm';
+import IcecreamEditForm from './components/IcecreamEditForm';
 
 class App extends Component {
   render() {
@@ -19,9 +19,9 @@ class App extends Component {
         <div className="container">
         <Route exact path='/' component={Home} />
         <Route exact path='/icecream' component={IcecreamList} />
-        <Route exact path='icecream/:id' component={IcecreamSingle} />
-        <Route exact path="/add" component={IceCreamAddForm} />
-        <Route exact path="/edit/:id" component={IceCreamEditForm} />
+        <Route exact path='/icecream/:id' component={IcecreamSingle} />
+        <Route exact path='/add' component={IcecreamAddForm} />
+        <Route exact path='/edit/:id' component={IcecreamEditForm} />
         </div>
         <Footer />
       </div>

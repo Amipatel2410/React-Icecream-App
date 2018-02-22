@@ -40,18 +40,18 @@ class IcecreamSingle extends Component {
       return (
         <div className="inner">
           <div className="img">
-            <img src={this.state.iceCream.url} alt={this.state.iceCream.flavor} />
+            <img src={this.state.icecream.url} alt={this.state.icecream.flavor} />
           </div>
           <div className="info">
-            <h4 className="brand">{this.state.iceCream.brand}</h4>
-            <h1>{this.state.iceCream.flavor}</h1>
-            <p>{this.state.iceCream.description}</p>
+            <h4 className="brand">{this.state.icecream.brand}</h4>
+            <h1>{this.state.icecream.flavor}</h1>
+            <p>{this.state.icecream.description}</p>
             <div className="links">
-              <span className="rating">Rating: {this.state.iceCream.rating || 'N/A'}</span>
+              <span className="rating">Rating: {this.state.icecream.rating || 'N/A'}</span>
               <Link to={`/edit/${this.props.match.params.id}`}>Edit</Link>
               <span className="delete" onClick={this.deleteIceCream}>Delete</span>
               {this.state.fireRedirect
-                ? <Redirect push to="/ice-cream" />
+                ? <Redirect push to="/icecream" />
                 : ''}
             </div>
           </div>

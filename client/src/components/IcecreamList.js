@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import Icecream from 'Icecream';
+import Icecream from './Icecream';
 
 
 class IcecreamList extends Component{
